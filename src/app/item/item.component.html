@@ -1,0 +1,113 @@
+<div class="itemmain">
+   <div class="info">
+      <h3> {{item.name}}</h3>
+      <h5>{{item.price | currency:"AMD"}}</h5>
+   </div>
+   <div class="container">
+      <div class="image">
+         <img [src]='item.image' alt="">
+
+      </div>
+      <div class="description" *ngIf="item.type=='Phone'">
+         <h3>Description</h3>
+         <table>
+            <tr>
+               <td class="white">Screen Type</td>
+               <td class="dec_text">Super Retina HD</td>
+            </tr>
+            <tr>
+               <td >Battery Power</td>
+               <td class="dec_text">3174 mAh</td>
+            </tr>
+            <tr class="white">
+               <td >Network</td>
+               <td class="dec_text">3G,4G LTE,WiFi,Bluetooth</td>
+            </tr>
+            <tr>
+               <td >Gps</td>
+               <td class="dec_text">Yes</td>
+            </tr>
+            <tr class="white" >
+               <td>Cpu</td>
+               <td class="dec_text">A12 Bionic chip</td>
+            </tr>
+            <tr>
+               <td>Back Cam</td>
+               <td class="dec_text">12 MP + 12MP</td>
+            </tr>
+            <tr  class="white" >
+               <td>Selfie Cam</td>
+               <td class="dec_text">12 MP</td>
+            </tr>
+            <tr>
+               <td >OS</td>
+               <td class="dec_text">IOS/ANDROID</td>
+            </tr>
+            <tr  class="white">
+               <td>Screen</td>
+               <td class="dec_text">6'8</td>
+            </tr>
+            <tr >
+               <td>Memory</td>
+               <td class="dec_text">64GB</td>
+            </tr>
+            <tr  class="white">
+               <td>Ram</td>
+               <td class="dec_text">3GB</td>
+            </tr>     
+         </table>
+      </div>
+      <div class="description" *ngIf="item.type!='Phone'">
+         <h3 >Description</h3>
+        
+        <table>
+            <tr class="white" >
+               <td >Screen</td>
+               <td class="dec_text">15'6, 1920x1080 FullHD</td>
+            </tr>
+            <tr>
+               <td >Cpu</td>
+               <td class="dec_text">Core i3 8130U  4 cores , 3.4 GGh</td>
+            </tr>
+            <tr class="white">
+               <td >HDD</td>
+               <td class="dec_text">1 TB</td>
+            </tr>
+            <tr>
+               <td>SSD</td>
+               <td class="dec_text">128 GB</td>
+            </tr>
+            <tr class="white">
+               <td>RAM</td>
+               <td class="dec_text">8 GB</td>
+            </tr>
+            <tr >
+               <td>GPU</td>
+               <td class="dec_text">Intel UHD Graphics 620</td>
+            </tr>
+            <tr class="white">
+               <td >USB</td>
+               <td class="dec_text">4</td>
+            </tr>
+            <tr>
+               <td>Audio</td>
+               <td class="dec_text">Dolby Athmos</td>
+            </tr>
+            <tr class="white">
+               <td>Inp,Out</td>
+               <td class="dec_text">  <span class="text">HDMI, VGA, LAN, USB 3.0, USB 2.0, Type-C, SD</span></td>
+            </tr>
+            <tr>
+               <td>Cam</td>
+               <td class="dec_text">720 HD</td>
+            </tr>
+            <tr class="white">
+               <td>OS</td>
+               <td class="dec_text">Windows 10</td>
+            </tr>
+            
+         </table>
+      </div>
+      
+   </div>
+</div>

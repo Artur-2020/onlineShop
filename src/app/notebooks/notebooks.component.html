@@ -1,0 +1,12 @@
+<div class="notebookmain">
+   <h2 class="head"> Notebooks</h2>
+   <div class="line"></div>
+
+   <div class="products ">
+      <div class="product" *ngFor="let electronic of electronics | sorttype:'Notebook'" >
+         
+         <app-product [electronic]='electronic'></app-product>
+       </div>
+      
+   </div>
+</div>

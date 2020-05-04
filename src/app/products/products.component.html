@@ -1,0 +1,32 @@
+<main>
+
+   <h1 class="head">Products</h1>
+   <div class="line"></div>
+
+   <!-- ays hatvacy apranqnery filtrelu hamar e -->
+   <div class="selectFilter">
+      <h3>
+         Here you can sort the products by date or price
+      </h3>
+      <select [(ngModel)]='selval'  id="sortby">
+         <option selected disabled>Sort By</option>
+         <option value="price">Price</option>
+         <option value="date">Date</option>
+      </select>
+   </div>  
+   <!-- ays masy apranqnery pntrelu hamar e -->
+   <div class="search">
+      <h3 class="searchtitle"> Here you can search the name of the product you want</h3>
+      <input [(ngModel)]='inpval'  class="searchInp" placeholder="Search product name" type="text">
+
+   </div>
+   <!-- cucadrum enq glxavor componenty vori mej yuraqanchyur apranqnery -->
+
+   <div id="products">
+      <div class="product" *ngFor='let electronic of electronics  | paginate: { itemsPerPage: 6, currentPage: p } | sort:selval | search:inpval'>
+         
+        <app-product [electronic]='electronic'></app-product>
+      </div>
+   </div>
+   <pagination-controls class="control" (pageChange)="p = $event"></pagination-controls>
+</main>

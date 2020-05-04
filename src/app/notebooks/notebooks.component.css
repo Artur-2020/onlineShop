@@ -1,0 +1,33 @@
+.head{   
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   margin-top: 20px;
+   
+}
+.line{
+   margin: auto;
+   width: 300px;
+   height: 2px;
+   background-color:#343A40 ;
+}
+.products{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 80px;
+   width:90%;
+   margin: auto;
+   height:auto;
+   /* border: 2px solid blue; */
+   margin-bottom: 20px;
+}
+.product{
+   background-color: white;
+   padding: 10px;
+   border: 1px solid #BEBEBE ;
+   /* border: 1px solid; */
+   width: auto;
+   height: auto;
+   margin: 20px;
+}

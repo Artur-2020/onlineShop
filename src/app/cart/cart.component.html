@@ -1,0 +1,29 @@
+<div class="cartmain">
+   
+      <div class="logo">
+         <h2 class="head"> Cart</h2>
+      <div class="line"></div>
+      </div>
+      <div class="total">
+         <h3>Youre Total Price</h3>
+         <h4>{{total()  | currency:"AMD"}} </h4>
+      </div>
+   
+   <div class="products container">
+      <div class="product" *ngFor="let electronic of electronics| paginate: { itemsPerPage: 3, currentPage: p };index as i  " >  
+         <img [src]='electronic.image'> <br>
+         <b class="prod_name"> <span>Name</span> {{electronic.name}}</b>
+       <div>
+          
+          <b class="prod_mycount"><span>MyCount</span>{{electronic.mycount}}</b>
+          <button class='plus' (click)="plus(electronic)">+</button>
+          <button class="minus" (click)="minus(electronic,i)">-</button>
+       </div>
+         <p class="prod_price"><span>Price</span> {{electronic.price | currency:"AMD"}}</p>
+         <p class="prod_date"><span>Date</span>{{electronic.date | date}} </p>
+         <p class="prod_description"> <span>Description</span> {{electronic.description}}</p>
+         <button class="removebtn" (click)="remove(i)">Remove</button>
+       </div>
+   </div>
+   <pagination-controls class="control" (pageChange)="p = $event"></pagination-controls>
+</div>

@@ -1,0 +1,11 @@
+<!-- atrubute i mijocov tvyalnery productsic poxancel em stex u imputov vercrel -->
+<img [src]='electronic.image'> <br>
+<b class="prod_name"> <span>Name</span> {{electronic.name}}</b>
+<p class="prod_price"><span>Price</span> {{electronic.price | currency:"AMD"}}</p>
+<p class="prod_date"><span>Date</span>{{electronic.date | date}} </p>
+<p class="prod_count"><span>Count</span>{{electronic.count}}</p>
+<p class="prod_description"> <span>Description</span> {{electronic.description}}</p>
+<div class="btns">
+   <button (click)=buy(electronic) class="buybtn">Buy</button>
+   <button class="viewbtn" ><a href="item/{{electronic.id}}">View</a></button>
+</div>

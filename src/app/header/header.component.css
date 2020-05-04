@@ -1,0 +1,19 @@
+.navbar-brand{
+   color: #C3C1C2;
+}
+.dropdown-menu .dropdown-item{
+
+   color: #fff;
+
+} 
+.dropdown-menu .dropdown-item:hover{
+   background: white;
+   color: #000;
+
+} 
+.icon{
+   display: inline-block;
+}
+.activecomp{
+   border-bottom: 2px solid orangered;
+}

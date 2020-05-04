@@ -1,0 +1,54 @@
+ul{
+   margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+ }
+ .footermain{
+    background-color: #343A40;
+    width: 100%;
+    /* border: 1px solid red; */
+    color: white;
+    margin: 0;
+ }
+ 
+ .networkicons{
+    display: flex;
+ }
+ .icon{
+    cursor: pointer;
+    margin-left: 15px;
+    transition: 0.3s;
+ }
+ .icon:hover{
+   
+    border-bottom: 3px solid white;
+    transition: 0.3s;
+ }
+ 
+ .email{
+    margin-bottom:15px;
+ }
+ .container a{
+    color: white;
+    margin-left: 5px;
+ }
+ .productlinks *{
+    margin-left: 10px;
+ }
+ .footer_content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+ }
+ 
+ @media screen and (max-width: 992px){
+   .footer_content{
+     flex-direction: column;
+   }
+   .contact, .networkicons, .productlinks{
+     margin: 15px 0;
+   }
+ }

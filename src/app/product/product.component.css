@@ -1,0 +1,100 @@
+*{
+   font-family: sans-serif;
+}
+
+img{
+   
+   width: 150px;
+   height: 150px;
+}
+.prod_description{
+   font-size: 10px;
+   width: 150px;
+}
+.prod_description > span{
+   display: block;
+   font-family: bold;
+   font-size: 15px;
+   color:#21D18B ;
+}
+.prod_name{
+   font-size: 12px;
+
+}
+.prod_name > span{
+   color:#212121;
+   display: block;
+   font-size: 15px;
+
+}
+.prod_price{
+   font-size: 12px;
+
+
+}
+.prod_price > span{
+   color:#777777;
+   display: block;
+   font-size: 15px;
+}
+.prod_count{
+   display: block;
+   font-size: 12px;
+
+
+}
+.prod_count > span{
+   color:#777777;
+   display: block;
+   font-size: 15px;
+
+}
+
+.prod_date{
+   font-size: 12px;
+}
+.prod_date > span{
+   display: block;
+   font-size: 15px;
+   color:#777777;
+
+}
+.btns{
+   width: 300px;
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: space-around;
+}
+.buybtn{
+   background-color:#21D18B;
+   font-weight: 500;
+   color: #fff;
+   width: 110px;
+   transition: 0.5s;
+   border: none;
+   cursor: pointer;
+}
+.buybtn:hover{
+   background-color: #1F1F1F;
+   transition: 0.5s;
+}
+.viewbtn{
+   font-size: 15px;
+   font-weight: 500;
+   /* background-color:#0a3d62; */
+   /* color: white; */
+   width: 110px;
+   transition: 0.5s;
+   border: none;
+   cursor: pointer;
+}
+.viewbtn:hover{
+   background-color:#C2D6D9;
+   transition: 0.5s;
+   color: black;
+   cursor: pointer;
+}
+.viewbtn > a{
+   text-decoration: none;
+   color: black;
+}

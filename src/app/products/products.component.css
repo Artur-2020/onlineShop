@@ -1,0 +1,82 @@
+.head{   
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   
+}
+.line{
+   margin: auto;
+   width: 300px;
+   height: 2px;
+   background-color:#8194AA ;
+}
+
+#products{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   /* border: 2px solid red; */
+   height: auto;
+   margin-top: 30px;
+}
+.selectFilter{
+   background-color: #E7E7E7;
+   /* border: 2px solid blue; */
+   font-family: 'Comfortaa', cursive;
+   height: 150px;
+   width: 300px;
+   float: right;
+   margin-top: 30px;
+   margin-right: 20px;
+   margin-bottom: 30px;
+   text-align: center;
+   
+}
+#sortby{
+   width: 150px;
+   height: 30px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+.search{
+   background-color: #E7E7E7;
+   font-family: 'Comfortaa', cursive;
+   width: 300px;
+   height: 200px;
+   float: left;
+   margin-top: 30px;
+   margin-left: 20px;
+   margin-bottom: 30px;
+   text-align: center;
+   /* border: 1px solid green; */
+}
+.searchInp{
+   padding-left: 10px;
+   width: 220px;
+   border-radius: 10px;
+}
+.product{
+   background-color: white;
+   padding: 10px;
+   border: 1px solid #BEBEBE ;
+   width: 350px;
+   height: auto;
+   margin: 20px;
+}
+
+main{
+   
+   background-color: #F0F0F0;
+}
+.control{
+   text-align: center;
+   margin-top: 20px;
+}
+:host /deep/.ngx-pagination .current,
+.btn-info {
+  background: #282d2e !important;
+  border: transparent;
+  border-radius: 20px;
+}
+

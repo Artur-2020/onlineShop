@@ -1,0 +1,12 @@
+<div class="computermain">
+   <h2 class="head"> Personal Computers</h2>
+   <div class="line"></div>
+
+   <div class="products container">
+      <div class="product" *ngFor="let electronic of electronics | sorttype:'PC'" >
+         
+         <app-product [electronic]='electronic'></app-product>
+       </div>
+      
+   </div>
+</div>
